@@ -14,7 +14,7 @@ class App extends React.Component {
           <h1>Trelloyes!</h1>
         </header>
         <div className="App-list">
-          {this.props.store.lists.map(x => <List id={x.id} header={x.header} cardIds={x.cardIds}/>)}
+          {STORE.lists.map(x => <List id={x.id} header={x.header} cardIds={x.cardIds}/>)}
         </div>
       </main>
     )

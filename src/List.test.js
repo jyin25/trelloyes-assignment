@@ -8,7 +8,16 @@ import STORE from './store';
 describe('List component', () => {
     it ('render without crashing', () => {
         const div = document.createElement('div');
-        ReactDOM.render(<List cardIds={STORE.lists.cardIds} header={STORE.lists.header}/>, div);
+        const cardList = [ 'a', 'b', 'e', 'f', 'g', 'j', 'l', 'm' ];
+        ReactDOM.render(<List cardIds={cardList}/>, div);
         ReactDOM.unmountComponentAtNode(div);
-    })
+    });
+
+    it('renders the UI as expected', () => {
+        const cardList = [ 'a', 'b', 'e', 'f', 'g', 'j', 'l', 'm' ];
+        const tree = renderer
+          .create(<List cardIds={cardList}/>)
+          .toJSON();
+        expect(tree).toMatchSnapshot();  
+      });
 });

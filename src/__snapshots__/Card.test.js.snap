@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card component render with data 1`] = `
+Array [
+  <div
+    className="Card"
+  >
+    <button
+      type="button"
+    >
+      delete
+    </button>
+    <h3>
+      Second card
+    </h3>
+    <p>
+      lorem ipsum
+    </p>
+  </div>,
+  <div
+    className="Card"
+  >
+    <button
+      type="button"
+    >
+      delete
+    </button>
+    <h3>
+      Third card
+    </h3>
+    <p>
+      lorem ipsum
+    </p>
+  </div>,
+  <div
+    className="Card"
+  >
+    <button
+      type="button"
+    >
+      delete
+    </button>
+    <h3>
+      Fourth card
+    </h3>
+    <p>
+      lorem ipsum
+    </p>
+  </div>,
+  <div
+    className="Card"
+  >
+    <button
+      type="button"
+    >
+      delete
+    </button>
+    <h3>
+      Sixth card
+    </h3>
+    <p>
+      lorem ipsum
+    </p>
+  </div>,
+  <div
+    className="Card"
+  >
+    <button
+      type="button"
+    >
+      delete
+    </button>
+    <h3>
+      Eighth card
+    </h3>
+    <p>
+      lorem ipsum
+    </p>
+  </div>,
+  <div
+    className="Card"
+  >
+    <button
+      type="button"
+    >
+      delete
+    </button>
+    <h3>
+      Ninth card
+    </h3>
+    <p>
+      lorem ipsum
+    </p>
+  </div>,
+  <div
+    className="Card"
+  >
+    <button
+      type="button"
+    >
+      delete
+    </button>
+    <h3>
+      Eleventh card
+    </h3>
+    <p>
+      lorem ipsum
+    </p>
+  </div>,
+]
+`;
