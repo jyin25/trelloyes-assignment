@@ -2,12 +2,12 @@ import React from 'react';
 import './Card.css'
 
 function Card (props) {
-
+    console.log()
     return (
-        <div className="Card">
-        <button type="button">delete</button>
-        <h3>{props.title}</h3>
-        <p>{props.content}</p>
+        <div className="Card" id={props.id}>
+            <button type="button" onClick={() => props.onDelete(props.id, props.listIndex)}>delete</button>
+            <h3>{props.title}</h3>
+            <p>{props.content}</p>
         </div>
     )
 }

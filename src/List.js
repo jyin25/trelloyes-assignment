@@ -12,17 +12,18 @@ function List (props) {
 
 
 
+
     return (
         <section className="List">
-        <header className="List-header">
-          <h2>{props.header}</h2>
-        </header>
-        <div className="List-cards">
-            {matchingIds.map(x=> <Card title={x.title} content={x.content} />)}
-            <button type="button" className="List-add-button">
-              + Add Random Card
-            </button>
-        </div>
+          <header className="List-header">
+            <h2>{props.header}</h2>
+          </header>
+          <div className="List-cards" id={props.ind}>
+              {matchingIds.map((x, index)=> <Card title={x.title} listIndex={props.ind} content={x.content} id={index} onDelete={props.onDelete}/>)}
+              <button type="button" className="List-add-button" id={props.ind} onClick={() => props.onAdd(props.ind)}>
+                + Add Random Card
+              </button>
+          </div>
         </section>
     )
 }

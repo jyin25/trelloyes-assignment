@@ -5,6 +5,14 @@ import STORE from './store';
 import Card from './Card';
 
 describe('Card component', () => {
+
+  it ('render without issue', () => {
+    const div = document.createElement('div');
+    ReactDOM.render(<Card />, div);
+    ReactDOM.unmountComponentAtNode(div);
+  });
+
+
   it ('render without issue', () => {
     const div = document.createElement('div');
     const allCards = {
